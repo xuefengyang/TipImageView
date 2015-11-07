@@ -26,7 +26,7 @@ its allow to add tip at corner, its like video app or picture browser app
         />
 ```
 ## custom attributes 
-  `tipDirection="left_top"` `tipBgColor="#F44336" `tipTextColor="#fff" `
-    `app:tipText="会员"` `tipTextSize="22sp"` 
+  `tipDirection="left_top"` `tipBgColor="#F44336"` `tipTextColor="#fff"`
+  `app:tipText="会员"` `tipTextSize="22sp"` 
 
 
