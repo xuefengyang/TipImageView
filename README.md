@@ -7,6 +7,11 @@ its allow to add tip at corner, its like video app or picture imageview
 
 #Useage
 
+## the first way   
+   clone this project to your disk by command line *** git clone git@github.com:xuefengyang/TipImageView.git *** .
+
+## the second way
+   
 
 
 
