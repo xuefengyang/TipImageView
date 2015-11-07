@@ -3,7 +3,7 @@ this is a very simple view that extands Imageview.
 its allow to add tip at corner, its like video app or picture imageview
 
 #Effect
-!["effect"](effect.png)
+!["effect"](effect2.jpg)
 
 #Useage
 
