@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TipImageView">
+        <attr name="tipTextColor" format="color"/>
+        <attr name="tipBgColor"  format="color" />
+        <attr name="tipDirection" format="enum">
+            <enum name="left_top" value="1"/>
+            <enum name="right_top" value="2"/>
+            <enum name="left_bottom" value="3"/>
+            <enum name="right_bottom" value="4"/>
+        </attr>
+        <attr name="tipText" format="string"/>
+        <attr name="tipTextSize" format="dimension" />
+    </declare-styleable>
+</resources>
