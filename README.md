@@ -33,7 +33,7 @@ its allow to add tip at corner, its like video app or picture browser app
 ##License
 -------
 
-    Copyright 2013 xuefeng yang
+    Copyright 2015 xuefengyang
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

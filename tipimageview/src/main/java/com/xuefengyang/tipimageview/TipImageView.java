@@ -1,5 +1,19 @@
+/*
+ * Copyright 2015 xuefengyang(https://github.com/xuefengyang)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.xuefengyang.tipimageview;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -75,28 +89,25 @@ public  class TipImageView extends ImageView {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-
-        calcuatePathByDirection();
+        calcPathByDirection();
     }
-    private void calcuatePathByDirection(){
+    private void calcPathByDirection(){
         mDistanceToEdge =Math.min(getMeasuredHeight(),getMeasuredWidth())/7;
-
         switch (mDirection){
-
             case LEFT_TOP:
-                calcuatePathLeftTop();
+                calcPathLeftTop();
                 break;
             case RIGHT_TOP:
-                calcuatePathRightTop();
+                calcPathRightTop();
                 break;
             case LEFT_BOTTOM:
-                calcuatePathLeftBottom();
+                calcPathLeftBottom();
                 break;
             case RIGHT_BOTTOM:
-                calcuatePathRightBottom();
+                calcPathRightBottom();
                 break;
             default:
-                calcuatePathLeftTop();
+                calcPathLeftTop();
                 break;
         }
         float tipTextWidth  =0;
@@ -119,7 +130,7 @@ public  class TipImageView extends ImageView {
 
 
     }
-    private void calcuatePathLeftTop(){
+    private void calcPathLeftTop(){
         mPath.moveTo(0, mDistanceToEdge);
         mPath.lineTo(0, mDistanceToEdge * 2);
         mPath.lineTo(mDistanceToEdge * 2, 0);
@@ -130,7 +141,7 @@ public  class TipImageView extends ImageView {
         mTextPath.lineTo(mDistanceToEdge*1.5F, 0);
 
     }
-    private void calcuatePathRightTop(){
+    private void calcPathRightTop(){
         mPath.moveTo(getMeasuredWidth()-mDistanceToEdge*2, 0);
         mPath.lineTo(getMeasuredWidth()-mDistanceToEdge, 0);
         mPath.lineTo(getMeasuredWidth(), mDistanceToEdge);
@@ -141,7 +152,7 @@ public  class TipImageView extends ImageView {
         mTextPath.lineTo(getMeasuredWidth(), mDistanceToEdge*1.5F);
 
     }
-    private void calcuatePathLeftBottom(){
+    private void calcPathLeftBottom(){
         mPath.moveTo(0, getMeasuredHeight()-mDistanceToEdge*2);
         mPath.lineTo(0, getMeasuredHeight() - mDistanceToEdge);
         mPath.lineTo(mDistanceToEdge, getMeasuredHeight());
@@ -152,7 +163,7 @@ public  class TipImageView extends ImageView {
         mTextPath.lineTo(mDistanceToEdge*1.5F, getMeasuredHeight());
 
     }
-    private void calcuatePathRightBottom(){
+    private void calcPathRightBottom(){
 
         mPath.moveTo(getMeasuredWidth() - mDistanceToEdge * 2, getMeasuredHeight());
         mPath.lineTo(getMeasuredWidth() - mDistanceToEdge, getMeasuredHeight());
