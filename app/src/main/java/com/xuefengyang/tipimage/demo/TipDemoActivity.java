@@ -1,5 +1,5 @@
-package com.xuefengyang.tipimage.demo;
 
+package com.xuefengyang.tipimage.demo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 

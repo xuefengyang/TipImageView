@@ -149,7 +149,7 @@ public  class TipImageView extends ImageView {
         mPath.close();
 
         mTextPath.moveTo(getMeasuredWidth()-mDistanceToEdge*1.5F, 0);
-        mTextPath.lineTo(getMeasuredWidth(), mDistanceToEdge*1.5F);
+        mTextPath.lineTo(getMeasuredWidth(),mDistanceToEdge*1.5F);
 
     }
     private void calcPathLeftBottom(){
