@@ -23,7 +23,7 @@ its allow to add tip at corner, its like video app or picture browser app
   app:tipDirection="left_top"
   app:tipBgColor="#F44336"
   app:tipTextColor="#fff"
-  app:tipText=“哈哈”
+  app:tipText=“hehe”
         />
 ```
 ## custom attributes 
